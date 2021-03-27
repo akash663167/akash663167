@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      @keyframes radial-pulse {
+        0% {
+          box-shadow: 0 0 0 30px rgba(0, 255, 0, 0.5);
+        }
+
+        100% {
+          box-shadow: 0 0 0 30px rgba(0, 0, 0, 0);
+        }
+      }
+      div {
+        width: 200px;
+        height: 200px;
+        background-color: #8cdada;
+        color: black;
+        position: absolute;
+
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        animation: radial-pulse 1s infinite;
+      }
+    </style>
+  </head>
+  <body>
+    <div>Hello World !!</div>
+  </body>
+</html>
